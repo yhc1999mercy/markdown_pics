@@ -33,8 +33,17 @@ gmt grd2xyz region.nc > region.txt
 <div style="text-align: center;"><i>fig3：topo_plot.png</i></div>
 
 ### 1.2 获取速度模型（以三维模型为例）
-- 已青藏高原南部作为研究区域为例，纬度26.2-29.8°，经度84.0-88.8°,深度80km,
+- 以青藏高原南部作为研究区域为例，纬度26.2-29.8°，经度84.0-88.8°,深度80km。执行python脚本**step2_extract_lat_lon.py**从CSRM1.0模型中提取研究区对应的三维地震波速度模型，获得extracted_data.txt。
+- 使用excel编辑extracted_data.txt，将其转化为specfem3d可读的格式，例如在文件的头四行加上头段信息；将速度转为m/s；添加密度信息等。
 
+![fig 4](https://github.com/yhc1999mercy/markdown_pics/blob/main/images/fig4.png?raw=true)
+<div style="text-align: center;"><i>fig4：extracted_data.txt</i></div>
+
+![fig 5](https://github.com/yhc1999mercy/markdown_pics/blob/main/images/fig5.png?raw=true)
+<div style="text-align: center;"><i>fig5：tomography_model.xyz格式</i></div>
+
+![fig 6](https://github.com/yhc1999mercy/markdown_pics/blob/main/images/fig6.png?raw=true)
+<div style="text-align: center;"><i>fig6：tomography_model.xyz</i></div>
 ---
 
 ## 2. 数据来源
@@ -49,3 +58,4 @@ gmt grd2xyz region.nc > region.txt
 import pandas as pd
 df = pd.read_csv('dataset.csv')
 print(df.info())
+```
