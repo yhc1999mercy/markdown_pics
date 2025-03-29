@@ -24,10 +24,7 @@ gmt grd2xyz region.nc > region.txt
 ![fig 1](https://github.com/yhc1999mercy/markdown_pics/blob/main/fig1.png?raw=true)
 
 
-<figure>
-  <img src="/home/work/Pictures/Screenshots/fig2.png" alt="fig2">
-  <figcaption>图 2：pure_topo.txt</figcaption>
-</figure>
+![fig 2](https://github.com/yhc1999mercy/markdown_pics/blob/main/fig2.png?raw=true)
 ### 1.2 获取速度模型（以一维模型为例）
 - 
 
