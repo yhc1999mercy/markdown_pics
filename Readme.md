@@ -24,10 +24,14 @@ gmt grd2xyz region.nc > region.txt
 - 执行python脚本**step1_plot_topo.py**将region.txt中的高程数据可视化为地形图。
 
 ![fig 1](https://github.com/yhc1999mercy/markdown_pics/blob/main/fig1.png?raw=true)
-<center>*fig1：region.txt*</center>
+<div style="text-align: center;"><i>fig1：region.txt</i></div>
 
 ![fig 2](https://github.com/yhc1999mercy/markdown_pics/blob/main/fig2.png?raw=true)
-<center>*fig2：pure_topo.txt*</center>
+<div style="text-align: center;"><i>fig2：pure_topo.txt</i></div>
+
+![fig 3](https://github.com/yhc1999mercy/markdown_pics/blob/main/topo_plot.png?raw=true)
+<div style="text-align: center;"><i>fig3：topo_plot.png</i></div>
+
 ### 1.2 获取速度模型（以三维模型为例）
 - 已青藏高原南部作为研究区域为例，纬度26.2-29.8°，经度84.0-88.8°,深度80km,
 
